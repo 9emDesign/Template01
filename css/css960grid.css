@@ -1,21 +1,89 @@
-root {
-  background-color: #f1f1f1;
+body{
+  background-color: #303237;
   min-width: 960px;
   margin: auto;
-  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-  font-size: 10.5pt;
+  font-family: Roboto,sans-serif;
   color: #000000;
 }
 
-@font-face {
-  font-family: ACaslonPro;
-  src: url(fonts/ACaslonPro-Regular.otf);
+/* Column margins */
+.col_12,
+/* full width */
+.col_9,
+/* 3/4 width */
+.col_8,
+/* 2/3 width */
+.col_6,
+/* half width */
+.col_5,
+/*1/4 width*/
+.col_4,
+/* 1/3 width */
+.col_3,
+/* 1/4 width */
+.col_13
+
+/* full width */
+  {
+  /*height: 50px;*/
+  margin-top: 0px;
+  /*top margin space*/
+  margin-bottom: 0px;
+  /*bottom margin space*/
+  text-align: left;
+  display: table-cell;
+  /*vertical-align:center;*/
 }
 
-@font-face {
-  font-family: Corbel;
-  src: url(fonts/corbel.ttf);
+.col_13 {
+  height: 50px;
 }
+
+/* full width footer*/
+.col_12 {
+  height: 200px;
+}
+
+/* full width header*/
+.col_9 {
+  height: 300px;
+}
+
+/* 3/4 width */
+.col_8 {
+  height: 300px;
+}
+
+/* 2/3 width */
+.col_6 {
+  height: 250px;
+}
+
+/* half width */
+.col_5 {
+  height: 325px;
+}
+
+.col_4 {
+  height: 300px;
+}
+
+/* 1/3 width */
+.col_3 {
+  height: 265px;
+}
+
+/* 1/4 width */
+
+@font-face {
+  font-family: Roboto;
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+
+h1,h2,h3,h4,h5,h6{font-family: Roboto;font-weight:700;}
+p{font-family: Roboto;font-size:10.5pt;}
+
+.model{ float:left;width:177px;}
 
 /*header*/
 
@@ -24,7 +92,8 @@ root {
   margin: 0 0 0 5px;
   background-color: #000000;
   padding: 0px;
-  font-family: Corbel;
+  width:110%;
+
 }
 
 /*bottom divs*/
@@ -35,6 +104,7 @@ root {
   margin: 0px;
   padding: 5px;
   width: auto;
+  height: 130px;
 }
 
 /*a black background and white letters for a div*/
@@ -141,11 +211,8 @@ blockquote cite:after {
 
 /*a black border around an image*/
 
-.scroll {
-  overflow: auto;
-}
 
-/*a scrollbar for the div*/
+/*a  bar for the div*/
 
 .fl {
   float: left;
@@ -155,14 +222,15 @@ blockquote cite:after {
 /*float a item*/
 
 p {
-  margin: 0 0 0 5px;
+  margin: 0 0 0 10px;
   padding: 0;
 }
 
 /*margin and padding for a paragraph*/
+.pos{position:relative;bottom:-5px;}
+
 
 /* Column margins */
-
 .col_14,
 /*full width content*/
 
@@ -216,16 +284,17 @@ p {
 
 .col_13 {
   width: 940px;
+  color:#ffffff;
 }
 
 .col_12 {
   width: 940px;
-  background-image: url(images/header.png);
+  background-image: url(../images/header.png);
 }
 
 .col_9 {
   width: 627px;
-  background-image: url(images/circle.png);
+  background-image: url(../images/circle.png);
 }
 
 .col_8 {
@@ -242,7 +311,7 @@ p {
 
 .col_4 {
   width: 235px;
-  background-image: url(images/circle.png);
+  background-image: url(../images/circle.png);
 }
 
 .col_3 {
@@ -322,7 +391,7 @@ p {
   .col_12 {
     width: 460px;
   }
-  #heading {
+#heading {
     display: none;
   }
   .col_9 {

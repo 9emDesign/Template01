@@ -1,312 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="this is a sample template for a 960, 12 column grid layout ">
-        <meta name="keywords" content="html5,Html 5,HTML5,template,960">
-        <title>Sample 960, 12 Column Grid Layout</title>
-        <link rel="stylesheet" type="text/css" href="css960grid.css" />
-        <link rel="stylesheet" href="styles.css">
-        <script src="jquery-3.3.1.min.js"></script>
-        <script src="script.js"></script>
 
-        <style>
-			/* Column margins */
-			.col_12, /* full width */
-			.col_9, /* 3/4 width */
-			.col_8, /* 2/3 width */
-			.col_6, /* half width */
-			.col_5, /*1/4 width*/
-			.col_4, /* 1/3 width */
-			.col_3, /* 1/4 width */
-			.col_13/* full width */ {
-				/*height: 50px;*/
-				margin-top: 0px;/*top margin space*/
-				margin-bottom: 0px;/*bottom margin space*/
-				text-align: left;
-				display: table-cell;
-				/*vertical-align:center;*/
-			}
-			.col_13 {
-				height: 50px;
-			}/* full width footer*/
-			.col_12 {
-				height: 200px;
-			}/* full width header*/
-			.col_9 {
-				height: 300px;
-			}/* 3/4 width */
-			.col_8 {
-				height: 300px;
-			}/* 2/3 width */
-			.col_6 {
-				height: 250px;
-			}/* half width */
-			.col_4 {
-				height: 300px;
-			}/* 1/3 width */
-			.col_3 {
-				height: 300px;
-			} /* 1/4 width */
-        </style>
-    </head>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="this is a sample template for a 960, 12 column grid layout ">
+  <meta name="keywords" content="html5,Html 5,HTML5,template,960">
+  <title>Sample 960, 12 Column Grid Layout</title>
+  <link rel="stylesheet" type="text/css" href="css/css960grid.css" />
+  <link rel="stylesheet" href="styles.css">
+ <link rel="shortcut icon" type="image/png" href="images/Tuki_logo_icon.png"/>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="script.js"></script>
 
-    <body>
-        <div class="row">
-            <nav>
-                    <a href="#"><img src="images/NL_ned.png" width="16" height="16"> nederlands</a>
-                    <a href="#"><img src="images/Us_eng.png" width="16" height="16"> english</a>
-                    <a href="#"><img src="images/ES_esp.png" width="16" height="16"> espanol</a>
-                    </nav>
+  <style>
 
-            <div class="col_12 first" style="background-color:#000000;color:#ffffff">
-                <div id='cssmenu'>
-                    <ul>
-                        <li>
-                            <a href='#'>Home</a>
-                        </li>
-                        <li class='active has-sub'>
-                            <a href="#">Products</a>
-                            <ul>
-                                <li class='has-sub'>
-                                    <a href="#">Product1</a>
-                                    <ul>
-                                        <li>
-                                            <a href='#'>Sub Product</a>
-                                        </li>
-                                        <li>
-                                            <a href='#'>Sub Product</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class='has-sub'>
-                                    <a href="#">Product2</a>
-                                    <ul>
-                                        <li>
-                                            <a href='#'>Sub Product</a>
-                                        </li>
-                                        <li>
-                                            <a href='#'>Sub Product</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+  </style>
+</head>
 
-                        <li class="has-sub">
-                            <a href="#">Seasons</a>
-                            <ul>
-                                <li>
-                                    <a href='#'>Autum</a>
-                                </li>
-                                <li>
-                                    <a href='#'>Summer</a>
-                                </li>
-                                <li>
-                                    <a href='#'>Fall</a>
-                                </li>
-                                <li>
-                                    <a href='#'>Winter</a>
-                                </li>
-                            </ul>
+<body>
+  <div class="row">
+    <nav aria-label="Navigation buttons for language: english, spanish, dutch">
+      <a aria-label="nederlands website" href="#"><img src="images/NL_ned.png" width="16" height="16" alt="Nederlands flag image"> nederlands</a>
+      <a aria-label="english website" href="#"><img src="images/Us_eng.png" width="16" height="16" alt="American flag image"> english</a>
+      <a aria-label="spanish website" href="#"><img src="images/ES_esp.png" width="16" height="16" alt="Spanish flag image"> espanol</a>
+    </nav>
 
-                        </li>
-                        <li class="has-sub">
-                            <a href="#">About</a>
-                            <ul>
-                                <li>
-                                    <a href='#'>Sub about</a>
-                                </li>
-                                <li>
-                                    <a href='#'>Sub about</a>
-                                </li>
-                            </ul>
+    <header class="col_12 first" style="background-color:#000000;color:#ffffff">
+      <div aria-label="Main navigation menu" id='cssmenu'>
+        <ul>
+          <li>
+            <a aria-label="Home menu item" href='#'>Home</a>
+          </li>
+          <li class='active has-sub'>
+            <a aria-label="Products menu item" href="#">Products</a>
+            <ul>
+              <li class='has-sub'>
+                <a aria-label="Main Sub Products menu item 1" href="#">Product 1</a>
+                <ul>
+                  <li>
+                    <a aria-label="Sub Product menu item 1a" href='#'>Sub Product 1a</a>
+                  </li>
+                  <li>
+                    <a aria-label="Sub Products menu item 1b" href='#'>Sub Product 1b</a>
+                  </li>
+                </ul>
+              </li>
+              <li class='has-sub'>
+                <a href="#">Product2</a>
+                <ul>
+                  <li>
+                    <a href='#'>Sub Product</a>
+                  </li>
+                  <li>
+                    <a href='#'>Sub Product</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
 
-                        </li>
-                        <li>
-                            <a href='#'>Contact</a>
-                        </li>
-                    </ul>
-                </div>
+          <li class="has-sub">
+            <a href="#">Seasons</a>
+            <ul>
+              <li>
+                <a href='#'>Autum</a>
+              </li>
+              <li>
+                <a href='#'>Summer</a>
+              </li>
+              <li>
+                <a href='#'>Fall</a>
+              </li>
+              <li>
+                <a href='#'>Winter</a>
+              </li>
+            </ul>
 
-                <div>
-                    <img src="images/logoTuki150.png" width="125" height="101">&nbsp;
-                    <div id="heading">
-                        <H1 class="header">Tuki Apartments &amp; Bungalows</H1>
-                    </div>
+          </li>
+          <li class="has-sub">
+            <a href="#">About</a>
+            <ul>
+              <li>
+                <a href='#'>Sub about</a>
+              </li>
+              <li>
+                <a href='#'>Sub about</a>
+              </li>
+            </ul>
 
-                </div>
+          </li>
+          <li>
+            <a href='#'>Contact</a>
+          </li>
+        </ul>
+      </div>
 
-            </div>
+      <div>
+        <img src="images/logoTuki150.png" width="125" height="101" alt="Logo tuki apartments image">&nbsp;
+        <div id="heading">
+          <H1 class="header">Tuki Apartments &amp; Bungalows</H1>
         </div>
-        <!--<div class="row">
-        <div class="col_9 first scroll" style="background-color:#65A683">
+
+      </div>
+
+    </header>
+  </div>
+  <!--<div class="row">
+        <div class="col_9 first  " style="background-color:#65A683">
 
         <p>&nbsp;</p></div>
-        <aside class="col_3 last scroll" style="background-color:#3E575E"><h4>&nbsp; And it�s 1/4 width counterpart</h4><p>Lorem ipsum dolor sit amet,
+        <aside class="col_3 last  " style="background-color:#3E575E"><h4>&nbsp; And it�s 1/4 width counterpart</h4><p>Lorem ipsum dolor sit amet,
         at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex. His iisque neglegentur in.
         Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an. Vim dictas insolens te,
         ne ornatus verterem nominati eum. Putent constituam inciderint per eu, ad quas fabellas vel, melius forensibus quo id.
         Iriure denique mei eu, eu qui docendi albucius. Ex nullam salutandi vim, eros ridens nec te. Ex vim exerci iuvaret,
         id nam zril sapientem molestiae.</p></aside>
         </div>-->
-        <!--<div class="row">
+  <!--<div class="row">
         <div class="col_8 first" style="background-color:#CF0"><p>Here�s a 2/3 width column</p></div>
         <div class="col_4 last" style="background-color:#9CC"><p>And it�s 1/3 width counterpart.</p></div>
         </div>-->
-        <div class="row">
-            <div class="col_4 first" style="background-color:#65A683">
-                <p>
-                    <h3>I'm a 1/3 width first</h3>
-                </p>
-            </div>
-            <div class="col_8 last" style="background-color:#3E575E">
-                <h2>And I�m a 2/3 width last</h2>
-                <p>
-                    Lorem ipsum dolor sit amet,
-                    at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex. His iisque neglegentur in.
-                    Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an. Vim dictas insolens te,
-                    ne ornatus verterem nominati eum. Putent constituam inciderint per eu, ad quas fabellas vel, melius forensibus quo id.
-                    Iriure denique mei eu, eu qui docendi albucius. Ex nullam salutandi vim, eros ridens nec te. Ex vim exerci iuvaret,
-                    id nam zril sapientem molestiae.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <article class="col_6 first scroll" style="background-color:#208778">
-                <h2>Want to go halfsies?</h2>
-                <p>
-                    ipsum dolor sit amet,
-                    at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex. His iisque neglegentur in.
-                    Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an. Vim dictas insolens te,
-                    ne ornatus verterem nominati eum. Putent constituam inciderint per eu, ad quas fabellas vel, melius forensibus quo id.
-                    Iriure denique mei eu, eu qui docendi albucius.
-                    <blockquote>
-                        Putent constituam inciderint per <br>eu, ad quas fabellas vel,<br> melius forensibus quo id.<cite>Aristoltle </cite>
-                    </blockquote>
-                </p>
-            </article>
-            <article class="col_6 last scroll" style="background-color:#208778">
-                <h2>Sure, I�ll go halfsies!</h2>
-                <p>
-                    ipsum dolor sit amet,
-                    at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex. His iisque neglegentur in.
-                    Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an. Vim dictas insolens te,
-                    ne ornatus verterem nominati eum. Putent constituam inciderint per eu, ad quas fabellas vel, melius forensibus quo id.
-                    Iriure denique mei eu, eu qui docendi albucius.ipsum dolor sit amet,
-                    at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex. His iisque neglegentur in.
-                    Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an. Vim dictas insolens te,
-                    ne ornatus verterem nominati eum. Putent constituam inciderint per eu, ad quas fabellas vel, melius forensibus quo id.
-                    Iriure denique mei eu, eu qui docendi albucius.
-                </p>
-            </article>
-        </div>
-        <div class="row">
-            <div class="col_3 first scroll" style="background-color:#2AAD9A">
-                <h3>Here's a 1/3 width column</h3>
-                <p>
-                    <img class="fl" src="images/zman1.jpg">
-                    Lorem ipsum dolor sit amet, at malis soluta assentior mea,exerci delicata adipiscing at per, pro solet dolores ex.
-                    His iisque neglegentur in. Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an.
-                    Vim dictas insolens te, ne ornatus verterem nominati eum. Putent constituam inciderint per eu, ad quas fabellas vel,
-                    melius forensibus quo id.Iriure denique mei eu, eu qui docendi albucius. Ex nullam salutandi vim, eros ridens nec te.
-                    Ex vim exerci iuvaret, id nam zril sapientem molestiae.
-                </p>
-                <br/>
-                <br/>
-            </div>
-            <div class="col_3 scroll" style="background-color:#2AAD9A">
-                <h3>I�m a 1/3 width column, too!</h3>
-                <p><img class="fl" src="images/zman2.jpg">
-                    Lorem ipsum dolor sit amet, at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex.
-                    His iisque neglegentur in. Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an.
-                    Vim dictas insolens te, ne ornatus verterem nominati eum. Putent constituam inciderint per eu, ad quas fabellas vel,
-                    melius forensibus quo id.Iriure denique mei eu, eu qui docendi albucius. Ex nullam salutandi vim, eros ridens nec te.
-                    Ex vim exerci iuvaret, id nam zril sapientem molestiae.
-                </p>
-                <br/>
-                <br/>
-            </div>
-            <div class="col_3 last scroll" style="background-color:#2AAD9A">
-                <h3>I�m the last 1/3 width :(</h3>
-                <p><img class="fl" src="images/zman3.jpg">
-                    Lorem ipsum dolor sit amet, at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex.
-                    His iisque neglegentur in. Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an.
-                    Vim dictas insolens te, ne ornatus verterem nominati eum. Putent constituam inciderint per eu, ad quas fabellas vel,
-                    melius forensibus quo id.Iriure denique mei eu, eu qui docendi albucius. Ex nullam salutandi vim, eros ridens nec te.
-                    Ex vim exerci iuvaret, id nam zril sapientem molestiae.
-                </p>
-                <br/>
-                <br/>
-            </div>
-        </div>
-        <div class="row">
-            <article class="col_5 first" style="background-color:#65A683">
-                <h4>Can we do 1/4 column</h4>
-                <p>
-                    <br/>
-                    <img class="imgborder" src="images/zayno4.jpg">
-                    <br/>
-                    <div id="zayno1" class="black">
-                        Lorem ipsum dolor sit amet, at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex.
-                        His iisque neglegentur in. Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an.
-                        <br/>
-                        <br/>
-                    </div>
-                </p>
-            </article>
+  <div class="row">
+    <section class="col_4 first" style="background-color:#77A2A6">
 
-            <article class="col_5" style="background-color:#65A683">
-                <h4>Sure we can do 1/4!</h4>
-                <p>
-                    <br/>
-                    <img class="imgborder" src="images/zayno2.jpg">
-                    <div id="zayno2" class="black">
-                        Lorem ipsum dolor sit amet, at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex.
-                        His iisque neglegentur in. Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an.
-                        <br/>
-                        <br/>
-                    </div>
-                </p>
-            </article>
-            <article class="col_5" style="background-color:#65A683">
-                <h4>I echo that sentiment!</h4>
-                <p>
-                    <br/>
-                    <img class="imgborder" src="images/zayno3.jpg">
-                    <br/>
-                    <div id="zayno3" class="black">
-                        Lorem ipsum dolor sit amet, at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex.
-                        His iisque neglegentur in. Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an.
-                        <br/>
-                        <br/>
-                    </div>
-                </p>
-            </article>
-            <article class="col_5 last" style="background-color:#65A683">
-                <h4>Why am I always last? :(</h4>
-                <p>
-                    <br/>
-                    <img class="imgborder" src="images/zayno4.jpg">
-                    <br/>
-                    <div id="zayno4" class="black">
-                        Lorem ipsum dolor sit amet, at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex.
-                        His iisque neglegentur in. Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an.
-                        <br/>
-                        <br/>
-                </div>
-              </article>
+  </section>
+    <section class="col_8 last" style="background-color:#77A2A6">
+      
+  <!--<img class="model" src="images/black_model_BW.png" alt="black model">-->
+<h2>And I�m a 2/3 width last</h2>
+      <p>
+        Lorem ipsum dolor sit amet,
+        at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex. His iisque neglegentur in.
+        Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an. Vim dictas insolens te,
+        ne ornatus verterem nominati eum. Putent constituam inciderint per eu, ad quas fabellas vel, melius forensibus quo id.
+        Iriure denique mei eu, eu qui docendi albucius. Ex nullam salutandi vim, eros ridens nec te. Ex vim exerci iuvaret,
+        id nam zril sapientem molestiae.
+      </p>
+    
+    </section>
+  </div>
+  <div class="row">
+    <article class="col_6 first" style="background-color:#208778">
+      <h2>Want to go halfsies?</h2>
+      <p>
+        ipsum dolor sit amet,
+        at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex. His iisque neglegentur in.
+        Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an. Vim dictas insolens te,
+        ne ornatus verterem nominati eum. Putent constituam inciderint per eu, ad quas fabellas vel, melius forensibus quo id.
+        Iriure denique mei eu, eu qui docendi albucius.
+          </p>
+        <blockquote>
+          Putent constituam inciderint per <br>eu, ad quas fabellas vel,<br> melius forensibus quo id.<cite>Aristoltle </cite>
+        </blockquote>
+
+    </article>
+    <article class="col_6 last" style="background-color:#208778">
+      <h2>Sure, I�ll go halfsies!</h2>
+      <p>
+        ipsum dolor sit amet,
+        at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex. His iisque neglegentur in.
+        Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an. Vim dictas insolens te,
+        ne ornatus verterem nominati eum. Putent constituam inciderint per eu, ad quas fabellas vel, melius forensibus quo id.
+        Iriure denique mei eu, eu qui docendi albucius.ipsum dolor sit amet,
+        at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex. His iisque neglegentur in.
+        Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an. Vim dictas insolens te,
+        ne ornatus verterem nominati eum. Putent constituam inciderint per eu, ad quas fabellas vel, melius forensibus quo id.
+        Iriure denique mei eu, eu qui docendi albucius.&nbsp;&nbsp;&nbsp;
+     <a href="ftp://127.0.0.1/6x9_novel.pdf">download PDF</a>
+      </p>
+    </article>
+  </div>
+  <div class="row">
+    <article class="col_3 first" style="background-color:#2AAD9A">
+      <h3>Here's a 1/3 width column</h3>
+      <p>
+        <img class="fl" src="images/zman1.jpg" alt="Image of zayno">
+        Lorem ipsum dolor sit amet, at malis soluta assentior mea,exerci delicata adipiscing at per, pro solet dolores ex.
+        His iisque neglegentur in. Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an.
+        Vim dictas insolens te, ne ornatus verterem nominati eum. Putent constituam inciderint per eu, ad quas fabellas vel,
+        melius forensibus quo id.Iriure denique mei eu, eu qui docendi albucius. Ex nullam salutandi vim, eros ridens nec te.
+        Ex vim exerci iuvaret, id nam zril sapientem molestiae.
+      </p>
+    </article>
+    <article class="col_3" style="background-color:#2AAD9A">
+      <h3>I�m a 1/3 width column, too!</h3>
+      <p><img class="fl" src="images/zman2.jpg" alt="Image of zayno">
+        Lorem ipsum dolor sit amet, at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex.
+        His iisque neglegentur in. Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an.
+        Vim dictas insolens te, ne ornatus verterem nominati eum. Putent constituam inciderint per eu, ad quas fabellas vel,
+        melius forensibus quo id.Iriure denique mei eu, eu qui docendi albucius. Ex nullam salutandi vim, eros ridens nec te. Ex vim exerci iuvaret, id nam zril sapientem molestiae.
+      </p>
+    </article>
+    <article class="col_3 last  " style="background-color:#2AAD9A">
+      <h3>I'm the last 1/3 width :(</h3>
+      <p><img class="fl" src="images/zman3.jpg" alt="Image of zayno">
+        Lorem ipsum dolor sit amet, at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex.
+        His iisque neglegentur in. Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an.
+        Vim dictas insolens te, ne ornatus verterem nominati eum. Putent constituam inciderint per eu, ad quas fabellas vel,
+        melius forensibus quo id.Iriure denique mei eu, eu qui docendi albucius. Ex nullam salutandi vim, eros ridens nec te.
+        Ex vim exerci iuvaret, id nam zril sapientem molestiae.
+      </p>
+    </article>
+  </div>
+  <div class="row">
+    <article class="col_5 first" style="background-color:#65A683">
+      <h4>Can we do 1/4 column</h4>
+      <p>
+        <br />
+        <img class="imgborder pos" src="images/zayno4.jpg" alt="Image of zayno">
+        <br />
+        <div id="zayno1" class="black">
+          <p>
+            Lorem ipsum dolor sit amet, at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex.
+            His iisque neglegentur in. Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an.
+            <br />
+            <br />
+          </p>
         </div>
+      </p>
+    </article>
 
-
-        <div class="row">
-            <footer class="col_13 first" style="background-color:#705c59">
-                <p>
-                    Here's a full width footer column
-                </p>
-      </footer>
+    <article class="col_5" style="background-color:#65A683">
+      <h4>Sure we can do 1/4!</h4>
+      <p>
+        <br />
+        <img class="imgborder pos" src="images/zayno2.jpg" alt="Image of zayno">
+        <div id="zayno2" class="black">
+          <p>
+            Lorem ipsum dolor sit amet, at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex.
+            His iisque neglegentur in. Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an.
+            <br />
+            <br />
+          </p>
         </div>
+      </p>
+    </article>
+    <article class="col_5" style="background-color:#65A683">
+      <h4>I echo that sentiment!</h4>
+      <p>
+        <br />
+        <img class="imgborder pos" src="images/zayno3.jpg" alt="Image of zayno">
+        <br />
+        <div id="zayno3" class="black">
+          <p>
+            Lorem ipsum dolor sit amet, at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex.
+            His iisque neglegentur in. Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an.
+            <br />
+            <br />
+          </p>
+        </div>
+      </p>
+    </article>
+    <article class="col_5 last" style="background-color:#65A683">
+      <h4>Why am I always last? :(</h4>
+      <p>
+        <br />
+        <img class="imgborder pos" src="images/zayno4.jpg" alt="Image of zayno">
+        <br />
+        <div id="zayno4" class="black">
+          <p>
+            Lorem ipsum dolor sit amet, at malis soluta assentior mea, exerci delicata adipiscing at per, pro solet dolores ex.
+            His iisque neglegentur in. Nec ad veri nihil nemore. Ubique audire fabulas ne usu, case error nostrum vis an.
+            <br />
+            <br />
+          </p>
+        </div>
+    </article>
+  </div>
 
-    </body>
+
+  <div class="row">
+    <footer class="col_13 first" style="background-color:#1D1B1B">
+      <p>
+        Here's a full width footer column
+      </p>
+    </footer>
+  </div>
+
+</body>
+
 </html>
